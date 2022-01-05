@@ -3,7 +3,7 @@
   "tabela_que_contem_usuario": "usuarios",
   "coluna_plano": "plano",
   "tabela_que_contem_plano": "planos",
-  "coluna_historico_de_reproducoes": "cancao_id",
+  "coluna_historico_de_reproducoes": "reproducao_id",
   "tabela_que_contem_historico_de_reproducoes": "usuario_historico",
   "coluna_seguindo_artistas": "artista_id",
   "tabela_que_contem_seguindo_artistas": "seguindo_id",
