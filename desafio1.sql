@@ -28,10 +28,9 @@ CREATE TABLE artistas(
 ) engine = InnoDB;
 
 CREATE TABLE seguindo(
-  seguindo_id INT AUTO_INCREMENT,
   usuario_id INT NOT NULL,
   artista_id INT NOT NULL,
-  PRIMARY KEY (seguindo_id),
+  PRIMARY KEY (usuario_id, artista_id),
   FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
   FOREIGN KEY (artista_id) REFERENCES artistas(artista_id)
 ) engine = InnoDB;
@@ -57,11 +56,10 @@ CREATE TABLE cancoes(
 ) engine = InnoDB;
 
 CREATE TABLE usuario_historico(
-  reproducao_id INT AUTO_INCREMENT,
   usuario_id INT NOT NULL,
   cancao_id INT NOT NULL,
   data_reproducao DATETIME,
-  PRIMARY KEY (reproducao_id),
+  PRIMARY KEY (usuario_id, cancao_id),
   FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
   FOREIGN KEY (cancao_id) REFERENCES cancoes(cancao_id)
 ) engine = InnoDB;
@@ -146,7 +144,7 @@ VALUES
 ('Home Forever', 231, 3, 4),
 ('Diamond Power', 241, 3, 4),
 ("Let's Be Silly", 132, 3, 4),
-('Thang Of Thunder, 240, 4, 5'),
+('Thang Of Thunder', 240, 4, 5),
 ('Words Of Her Life', 185, 4, 5),
 ('Without My Streets', 176, 4, 5),
 ('Need Of The Evening', 190, 4, 6),
@@ -202,7 +200,7 @@ VALUES
 (7, 11, '2018-01-16 18:40:43'),
 (8, 39, '2018-03-21 16:56:40'),
 (8, 40, '2020-10-18 13:38:05'),
-(8, 32, '2019-05-25 08:14:03')
+(8, 32, '2019-05-25 08:14:03'),
 (8, 33, '2021-08-15 21:37:09'),
 (9, 16, '2021-05-24 17:23:45'),
 (9, 17, '2018-12-07 22:48:52'),
