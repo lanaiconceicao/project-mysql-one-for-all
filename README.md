@@ -1,3 +1,10 @@
+
+Esse é um projeto que fiz no curso da Trybe, onde desenvolvi um Diagrama Entidade Relacionamento no Excalidraw (https://docs.google.com/document/d/11U1rexAz_8dF23LsUUmAk-T1BXei4VyTvxPxOcH2J64/edit?usp=sharing) e depois de colocar minhas ideias no Excalidraw, criei uma planilha onde organizei minha tabela normalizada (https://docs.google.com/spreadsheets/d/e/2PACX-1vTWyLtn8xler3B8in_RblvPEqNYkFbn4_8FZKARdnCjHGcSHVJyDhC8ZUINrZ_XmNGhEJB1UwrX3AZG/pubhtml).
+
+
+
+=====================================================================
+
 ### Termos e acordos
 
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
